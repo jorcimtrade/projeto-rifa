@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rifa Legal - Sorteie seu Prêmio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎟️ RIFA LEGAL</h1>
+    <p>Participe do sorteio e ganhe um prêmio incrível!</p>
+
+    <!-- Informações do prêmio -->
+    <div class="prize">
+      <h2>Prêmio: Apple iPhone 17 Pro 256GB 6,3" 48MP Laranja-Cósmico </h2>
+      <p>Números disponíveis: <span id="numerosDisponiveis">50</span></p>
+    </div>
+
+    <!-- Formulário para comprar número -->
+    <div class="buy-section">
+      <label for="numero">Escolha um número (1 a 50):</label>
+      <input type="number" id="numero" min="1" max="50" required />
+      <button onclick="comprarNumero()">Comprar Número</button>
+    </div>
+
+    <!-- Lista de números comprados -->
+    <div class="numbers-list">
+      <h3>Números Comprados:</h3>
+      <ul id="listaNumeros"></ul>
+    </div>
+
+    <!-- Botão de sorteio -->
+    <button class="draw-btn" onclick="sortear()">✅ Realizar Sorteio</button>
+
+    <!-- Resultado do sorteio -->
+    <div id="resultado" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
